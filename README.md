@@ -1,4 +1,4 @@
-#SimpleWikiScraper
+# SimpleWikiScraper
 
 A python program to scrape information from wikipedia articles such as hyperlink and image count. Relies on BeautifulSoup and Urllib2. Written to test out the libraries and try some basic scraping of webpages.
 
