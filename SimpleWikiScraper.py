@@ -7,6 +7,7 @@ wiki="https://en.wikipedia.org/wiki/" + func(str(input("Enter then name of the a
 page = urlopen(wiki)
 soup = BeautifulSoup(page, "lxml")
 wordList=[]
+titleList=[]
 
 title=soup.title.string.replace(" - Wikipedia","")
 
@@ -16,9 +17,14 @@ for link in all_links:
     
 images=soup.find_all("img")
 
+for titles in soup.find_all("span",{"class":"mw-headline"}):
+    titleList.append(wiki+"#"+titles.text.replace(" ","_"))
+
 hyperlinkcount=len(wordList)-63
 imagecount=len(images)-4
 
-
-
-print("Page Title: " + title, "\nHyperlink Count: " + str(hyperlinkcount), "\nImage Count: " + str(imagecount))
+print("\nPage Title: " + title, "\nHyperlink Count: " + str(hyperlinkcount), "\nImage Count: " + str(imagecount), "\nSection Count: " + str(len(titleList)))
+    
+print("\nSections:")
+for i in titleList:
+    print(i)
