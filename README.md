@@ -18,7 +18,7 @@ Requires Python 3.x.x
 
 ## Authors
 
-* **FHoughton** - *Initial work* - [Fhoughton](https://github.com/Fhoughton)
+[Fhoughton](https://github.com/Fhoughton) - *Initial work*
 
 See also the list of [contributors](https://github.com/Fhoughton/SimpleWikiScraper/contributors) who participated in this project.
 
@@ -28,4 +28,4 @@ This project is licensed under the GNU General Public License - see the [LICENSE
 
 ## Acknowledgments
 
-* Based off an article by [DigitalOcean](www.digitalocean.com)
+* Based off an article by [DigitalOcean](https://www.digitalocean.com)
